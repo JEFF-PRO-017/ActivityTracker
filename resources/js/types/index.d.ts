@@ -15,3 +15,11 @@ export type PageProps<
     };
     ziggy: Config & { location: string };
 };
+
+// resources/js/types/index.ts
+export interface Activity {
+    id: number;
+    application_name: string;
+    start_time: string; // Les dates sont des chaînes
+    end_time: string | null; // Peut être null
+}
